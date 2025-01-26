@@ -1,0 +1,17 @@
+[package]
+name = "xml_collected"
+version = "0.1.0"
+authors = ["Marko Dragnic <dragnicmarko86@gmail.com>"]
+edition = "2021"
+description = "A Rust library to fetch and parse XML sitemaps, discover sub-sitemaps, and save extracted URLs to a file."
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/MarkoDragnic/xml_collected"
+homepage = "https://github.com/MarkoDragnic/xml_collected"
+keywords = ["sitemap", "xml", "parser", "urls"]
+categories = ["parsing", "web-programming", "text-processing"]
+
+
+[dependencies]
+quick-xml = "0.37.2"
+reqwest = { version = "0.12", features = ["blocking", "json"] }
